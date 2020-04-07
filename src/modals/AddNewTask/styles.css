@@ -1,0 +1,8 @@
+.new-task-modal {
+  min-height: 120px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

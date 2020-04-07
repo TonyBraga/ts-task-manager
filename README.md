@@ -1,44 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+.idea
+.vscode
+/node_modules/# Тестовое задание на джуниора javascript
 
-## Available Scripts
+## Цель
 
-In the project directory, you can run:
+Реализовать компонент на фронтенде для учета задач.
 
-### `yarn start`
+1. Необходимо вывести список задач в таблицу:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Номер задачи (id).
+* Заголовок задачи (title).
+* Фамилия и Имя исполнителя (contractor->last_name, contractor->first_name).
+* Статус задачи (status).
+* Действия (кнопки переключения задач между статусами).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+2. Реализовать кнопки переключения задач между статусами:
 
-### `yarn test`
+* Из статуса "Новая" можно переключить в статус "Выполнена". Кнопка называется "Выполнить".
+* Из статуса "Новая" можно переключить в статус "Отменена". Кнопка называется "Отменить".
+* Из статуса "Выполнена" можно переключить только в "Закрыта". Кнопка называется "Закрыть".
+* Из статусов "Закрыта" и "Отменена" переходов в другие статусы нет.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Реализовать фильтры задач в таблице:
 
-### `yarn build`
+* Фильтр (select) по статусам. Может быть не выбран - отображаются все задачи.
+Если выбран конкретный статус, то задачи отображаются в этом статусе.
+* Фильтр (select) по исполнителям. Может быть не выбран - отображаются все задачи.
+Если выбран конкретный пользователь, то отображаются только те задачи, где
+выбранный пользователь - исполнитель.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Реализовать поиск по названию в таблице:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* Строка поиска по названию задачи: искать в любом регистре, искать по части строки.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Дополнительные вопросы:
 
-### `yarn eject`
+Вопрос: Перезаписывать ли данные, находящиеся в localstorage при перезагрузке страницы?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Ответ: Нет.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Вопрос: Сделать кнопку принудительной перезагрузки данных в localstorage из файлов?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Ответ: Необязательно, но было бы плюсом.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Инструменты
 
-## Learn More
+* Верстка: Bootstrap 4 или аналогично.
+* JS-фреймворк (на выбор разработчика): чистый js, либо React.js.
+* Хранить данные: в localstorage.
+* Первичное получение данных: AJAX.
+* Система сборки (на выбор разработчика): Gulp, либо webpack.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Где хранятся первичные данные
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* `users.json` - список пользователей, они же исполнители (`contractor_id` у задач).
+* `statuses.json` - список статусов задач.
+* `tasks.json` - список задач.

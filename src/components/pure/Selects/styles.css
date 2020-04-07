@@ -1,0 +1,16 @@
+.select {
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select:hover {
+  cursor: pointer;
+}

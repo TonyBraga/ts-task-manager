@@ -1,0 +1,22 @@
+.status-span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: .9rem;
+  color: #333
+}
+
+.status-span-new {
+  color: #2196F3
+}
+
+.status-span-seccess {
+  color: #66BB6A
+}
+
+.status-span-cancel {
+  color: #FFCA28
+}
+
+.status-span-close {
+  color: #78909C
+}

@@ -1,0 +1,21 @@
+.modal-wrap {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.modal-content {
+  background-color: white;
+  opacity: 1;
+  padding: 20px;
+  border-radius: 4px;
+  z-index: 1
+}

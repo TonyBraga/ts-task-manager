@@ -1,0 +1,30 @@
+:root {
+  --main-color: '#333'
+}
+
+.app-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px
+}
+
+.new-task-wrap {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+td {
+  padding: 5px;
+}

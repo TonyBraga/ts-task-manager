@@ -1,0 +1,26 @@
+thead tr td {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.task-search {
+  width: 100%;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.task-search:focus {
+  outline: none;
+}
+
+.hide-wrap {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}

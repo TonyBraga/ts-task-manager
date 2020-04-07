@@ -1,0 +1,48 @@
+.btn {
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  padding: 5px 10px;
+  transition-duration: .4s;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-default {
+  background-color: #2196F3;
+}
+
+.btn-default:hover {
+  background-color: #90CAF9;
+}
+
+.btn-seccess {
+  background-color: #66BB6A;
+}
+
+.btn-seccess:hover {
+  background-color: #A5D6A7;
+}
+
+.btn-cancel {
+  background-color: #FFCA28;
+}
+
+.btn-cancel:hover {
+  background-color: #FFE082;
+}
+
+.btn-close {
+  background-color: #78909C;
+}
+
+.btn-close:hover {
+  background-color: #B0BEC5;
+}
