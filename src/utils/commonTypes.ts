@@ -15,5 +15,3 @@ export interface onChangeType {
 export interface onActionType {
   (newStatus : number) : void
 }
-
-export type lambdaVoid = () => void

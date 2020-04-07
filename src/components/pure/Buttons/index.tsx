@@ -1,12 +1,11 @@
 import React, { FC } from 'react'
-import { lambdaVoid } from '../../../utils/commonTypes'
 
 import './style.css'
 
 interface ButtonType {
   variant? : string, 
   label : string, 
-  click : lambdaVoid
+  click : () => void
 }
 
 export const Button : FC<ButtonType> = ({variant = 'default', label, click}) => {

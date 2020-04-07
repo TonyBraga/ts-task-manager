@@ -1,13 +1,12 @@
 import React, { FC } from 'react'
 
 import { StatusSpanType } from './types'
-import { lambdaVoid } from '../../../utils/commonTypes'
 import { STATUSES } from '../../../utils/constants'
 
 import './style.css'
 
 const StatusSpan : FC<StatusSpanType> = ({label, currentId}) => {
-  const getCurrentVariant : lambdaVoid = () => {
+  const getCurrentVariant = () : string | undefined => {
     switch(currentId) {
       case STATUSES.STATUS_NEW: return '-new'
       case STATUSES.STATUS_SECCESS: return '-seccess'
